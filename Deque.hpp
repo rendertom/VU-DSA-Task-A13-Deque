@@ -109,7 +109,6 @@ template <class T>
 void Deque<T>::popAt(int index) {
   if (isEmpty()) {
     std::cout << "Deque is empty" << std::endl;
-    // return -1;
   }
 
   index = mod(index, size);
@@ -141,6 +140,8 @@ template <class T>
 void Deque<T>::popBack() {
   if (isEmpty()) {
     std::cout << "Deque is empty" << std::endl;
+  } else if (size == 1) {
+    clear();
   } else {
     Node<T> *temp = back;
     back = back->previous;
@@ -157,6 +158,8 @@ template <class T>
 void Deque<T>::popFront() {
   if (isEmpty()) {
     std::cout << "Deque is empty" << std::endl;
+  } else if (size == 1) {
+    clear();
   } else {
     Node<T> *temp = front;
     front = front->next;
@@ -261,7 +264,6 @@ void Deque<T>::pushFront(T value) {
 
 template <class T>
 Node<T> *Deque<T>::createNode(T value) {
-  // std::cout << "Adding value: " << value << std::endl;
   Node<T> *node = new Node<T>;
   node->value = value;
   node->previous = NULL;
