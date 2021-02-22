@@ -4,15 +4,15 @@
 
 Duomenų struktūra _abipusis dėklas_ – tai duomenų masyvas, kuriam apibrėžtos tokios operacijos:
 
-- elemento įterpimas į abipusio dėklo pradžią
-- elemento įterpimas į abipusio dėklo pabaigą
-- elemento pašalinimas iš abipusio dėklo pradžios
-- elemento pašalinimas iš abipusio dėklo pabaigos
-- abipusio dėklo pradžios skaitymas
-- abipusio dėklo pabaigos skaitymas
-- abipusio dėklo panaikinimas
+- elemento įterpimas į abipusio dėklo pradžią [pushFront](#pushfront)
+- elemento įterpimas į abipusio dėklo pabaigą [pushBack](#pushback)
+- elemento pašalinimas iš abipusio dėklo pradžios [popFront](#popfront)
+- elemento pašalinimas iš abipusio dėklo pabaigos [popBack](#popback)
+- abipusio dėklo pradžios skaitymas [getFront](#getfront)
+- abipusio dėklo pabaigos skaitymas [getBack](#getback)
+- abipusio dėklo panaikinimas [clear](#clear)
 
-Metodai:
+Žemiau pateikiami visi metodai, kurie buvo implementuoti kuriant abipusio dėklo klasę:
 
 - [clear](#clear)
 - [getAt](#getat)
